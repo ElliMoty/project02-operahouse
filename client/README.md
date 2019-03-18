@@ -22,7 +22,9 @@ Password: chicken
 ### `Many thanks to:`
 
 [React Spring](https://github.com/react-spring/react-spring)
+
 [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+
 [Lodash](https://lodash.com/)
 
 ## The future of this project
