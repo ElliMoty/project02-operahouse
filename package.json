@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd client && npm i && npm run build",
-    "start": "harp server client/build/static --port $PORT"
+    "start": "harp server client/build --port $PORT"
   },
   "dependencies": {
     "harp": "*"
