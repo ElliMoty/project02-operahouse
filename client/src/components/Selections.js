@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Nav from './Nav';
 import './css/selections.scss'
 
@@ -11,14 +11,14 @@ function Selections() {
             <div className="selection">
 
                 <div className="message">
-                    Sorry, your browser does not support CSS Grid. <span role="img" aria-label="sorry">😅</span>
+                    Sorry, your browser does not support CSS Grid. 😅
             </div>
 
                 <section className="section" />
                 <div className="grid">
 
                     <div className="item">
-                        <Link to="/events/categories/opera/werther">
+                        <Link to="/events/categories/opera/Werther">
                             <div className="item__details">
                                 Werther
                             </div>
