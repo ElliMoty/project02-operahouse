@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+  color: rgb(75, 74, 73);
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FAFAFA;
+  font-family: "Neuton";;
+}
+.cat-list {
+  display: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.grid-item {
+  margin: 10px 10px;
+  display: inline-block;
+  top: -20px;
+  height: 300px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #3b5269;
+  padding-top: 260px;
+  box-shadow: 2px 2px 15px grey;
+  animation-name: card;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 10;
+}
+
+@-webkit-keyframes card {
+  0%   {background-color:rgb(179, 174, 174); left: 0 ; top:0px;}
+  100% {background-color:rgb(67, 99, 241); left: 0; top:200px;}
+}
+
+/* Standard syntax */
+@keyframes card {
+  0%   {background-color: rgb(179, 174, 174); left: 0 ; top:0px;}
+  100% {background-color:rgb(67, 99, 241); left: 0 ; top:200px;}
+}
+
+.text {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  color: rgb(167, 163, 163);
+  text-shadow: 2px 2px 12px rgb(22, 21, 21);
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(93, 91, 91);
+}
+
+.categories {
+  margin: 150px;
+}
+
+

@@ -1,0 +1,39 @@
+
+<h1>Seats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Seat name</th>
+      <th>Seat num</th>
+      <th>Event Space</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seats.each do |seat| %>
+      <tr>
+        <td><%= seat.seat_name %></td>
+        <td><%= seat.seat_num %></td>
+        <td><%= seat.event_space.name %></td>
+        <td><%= seat.user.name %></td>
+        <td><%= link_to 'Show', seat %></td>
+
+        <td><%= link_to 'Destroy', seat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<div class="nav">
+  <nav class="main_nav">
+    <a href="/events">Events</a> |
+    <a href="/event_spaces">Event Spaces</a> |
+    <a href="/categories">Categories</a> |
+    <a href="/seats">Seats</a> |
+    <a href="/users">All Users</a>
+  </nav>
+</div>
