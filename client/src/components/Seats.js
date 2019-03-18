@@ -50,8 +50,9 @@ function Seats(props) {
   return (
     <div>
 
-      {events.filter((event) => {
-        if (event.name = name) {
+      {
+        events.filter((event) => {
+        if (event.name === name) {
           const id = event.event_space_id;
           spaces.filter((space) => {
             if (space.id === id) {

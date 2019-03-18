@@ -49,6 +49,7 @@ return (
         placeholder="Email address"
         type="email"
         name="email"
+        autocomplete="john@ga.co"
         required
       />
       <input
@@ -57,6 +58,7 @@ return (
         placeholder="Password"
         type="password"
         name="password"
+        autocomplete="chicken"
         required
       />
 <button type="submit" className="submit">Submit</button>

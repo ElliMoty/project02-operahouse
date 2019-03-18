@@ -114,7 +114,7 @@ function Events(props) {
                   <p className="read-more">
                     {dates[index]
                         ?
-                        <Link to={'/events/categories' + '/' + props.match.params.genre + '/' + name.replace(/ /g, '_')}>Read More</Link>
+                        <Link to={'/events/categories/' + props.match.params.genre + '/' + name.replace(/ /g, '_')}>Read More</Link>
                         :
                         <div></div>
                   }

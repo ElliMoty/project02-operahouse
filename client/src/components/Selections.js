@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import axios from 'axios';
+import { BrowserRouter as Link } from 'react-router-dom';
 import Nav from './Nav';
 import './css/selections.scss'
 
@@ -12,7 +11,7 @@ function Selections() {
             <div className="selection">
 
                 <div className="message">
-                    Sorry, your browser does not support CSS Grid. 😅
+                    Sorry, your browser does not support CSS Grid. <span role="img" aria-label="sorry">😅</span>
             </div>
 
                 <section className="section" />

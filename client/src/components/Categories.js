@@ -25,10 +25,6 @@ function Categories() {
     setCat(response.data)
   }
 
-  categories.map((cat) => {
-    console.log(cat.genre.replace(/ /g, "_"));
-  })
-
   
   //------------------------------------------------------------------------------
   return (
@@ -38,7 +34,7 @@ function Categories() {
 
         <ul>
           {categories.map((category) =>
-            <li className="grid-item"><Link to={'/events/categories' + '/' + category.genre.replace(/ /g, "_")}><p className="text">{category.genre}</p></Link></li>)}
+            <li className="grid-item"><Link to={'/events/categories/' + category.genre.replace(/ /g, "_")}><p className="text">{category.genre}</p></Link></li>)}
         </ul>
 
       </div>
